@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+#tilt_js {
+    margin: auto;
+    margin-top: 200px;
+    height: 450px;
+    width: 500px;
+    background-color: purple;
+    transform-style: preserve-3d;
+    .tilt_object {
+        width: 300px;
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%) translateZ(20px); 
+        img {
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+}
+
+body {
+    background-color: gainsboro;
+}
